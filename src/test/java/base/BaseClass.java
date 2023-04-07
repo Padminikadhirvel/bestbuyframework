@@ -19,7 +19,7 @@ public class BaseClass extends Utility{
 
 	  @AfterClass
 	  public void close() {
-//		  driver.quit();
+		  driver.quit();
 	  }
 
 }
