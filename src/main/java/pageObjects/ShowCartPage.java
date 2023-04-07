@@ -31,7 +31,7 @@ public class ShowCartPage {
 	WebElement savings;
 	@FindBy(xpath="(//span[@class='price-summary-line__content'])[3]")
 	WebElement storepickup;
-	@FindBy(xpath="(//span[@class='price-summary-line__content'])[4]")
+	@FindBy(xpath="(//span[@class='price-summary-line__content'])[5]")
 	WebElement estimatedtax;
 	@FindBy(css="div[class='below-the-line-item '] div:nth-child(2)")
 	WebElement totalprice;

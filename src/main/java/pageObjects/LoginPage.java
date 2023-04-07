@@ -51,6 +51,7 @@ public class LoginPage {
 		password.click();
 	}
 	public void EnterInvalidPassword(String InvalidPassword) {
+		password.clear();
 		password.click();
 		password.sendKeys(InvalidPassword);
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));

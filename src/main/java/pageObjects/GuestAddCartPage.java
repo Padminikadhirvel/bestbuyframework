@@ -49,7 +49,7 @@ public class GuestAddCartPage {
 	WebElement sonylink;
 	@FindBy(xpath="//a[normalize-space()='Sony cameras']")
 	WebElement sonycameralink;
-	@FindBy(xpath="//a[contains(text(),'Sony - Alpha 7R IV Full-frame Mirrorless Interchan')]")
+	@FindBy(xpath="//div[@id='shop-sku-list-item-97528193']//a[contains(text(),'Sony - Alpha 7 IV Full-frame Mirrorless Interchang')]")
 	WebElement sonycamera;
 	@FindBy(xpath="body > div:nth-child(5) > main:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(12) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > strong:nth-child(1)")
 	WebElement availablity;
@@ -86,7 +86,7 @@ public class GuestAddCartPage {
 		wait.until(ExpectedConditions.visibilityOf(sonytv));
 		sonytv.click();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,1500)");
+		js.executeScript("window.scrollBy(0,2000)");
 //		action.doubleClick(samsungtv).build().perform();
 		wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(addtocart));
@@ -112,6 +112,8 @@ public class GuestAddCartPage {
 		sonycameralink.click();
 //		wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 //		wait.until(ExpectedConditions.elementToBeClickable(sonycamera));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", sonycamera);
+//		js.executeScript("window.scrollBy(0,600)");
 		sonycamera.click();
 		//JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,1300)");

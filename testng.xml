@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.CheckUrlTest"/>
+      <class name="testcases.CheckUrlTest"/> 
       <class name="testcases.AccountaddTest"/>
       <class name="testcases.LoginTest"/>
        <class name="testcases.LinkValidateTest"/>     

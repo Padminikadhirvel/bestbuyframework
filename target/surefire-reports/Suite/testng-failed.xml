@@ -13,20 +13,12 @@
           <include name="BrokenURLOperation"/>
         </methods>
       </class> <!-- testcases.CheckUrlTest -->
-      <class name="testcases.LoginTest">
-        <methods>
-          <include name="close"/>
-          <include name="Startup"/>
-          <include name="InvalidLoginOperation"/>
-        </methods>
-      </class> <!-- testcases.LoginTest -->
       <class name="testcases.GuestCheckOutTest">
         <methods>
           <include name="AddCartProductByDept"/>
           <include name="close"/>
           <include name="Startup"/>
           <include name="AddPickupPerson"/>
-          <include name="PaymentInfo"/>
           <include name="ShowCartOperation"/>
           <include name="CheckOutOperation"/>
           <include name="PlaceOrderOperation"/>

@@ -1,5 +1,7 @@
 package testcases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import base.BaseClass;
@@ -15,7 +17,7 @@ public class CheckUrlTest  extends BaseClass {
 		
 	}
 	@Test(priority=2)
-	public void BrokenURLOperation(){
+	public void BrokenURLOperation() throws IOException{
 		CheckUrlPage urlchk=new CheckUrlPage(driver);
 		urlchk.BrokenUrl();
 	}

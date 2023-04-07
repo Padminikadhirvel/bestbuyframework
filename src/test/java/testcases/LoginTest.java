@@ -27,8 +27,8 @@ public class LoginTest extends BaseClass{
 	@Test(priority=3)
 	public void InvalidLoginOperation() {
 		LoginPage login=new LoginPage(driver);
-		login.Siginlink();
-		login.EnterEmailAddr(prop.getProperty("Emailid"));
+//		login.Siginlink();
+//		login.EnterEmailAddr(prop.getProperty("Emailid"));
 		login.EnterPassword(prop.getProperty("InvalidPwd"));
 		login.SigninBtn();
 		
