@@ -12,10 +12,24 @@
           <include name="Startup"/>
           <include name="AddPickupPerson"/>
           <include name="CheckOutOperation"/>
-          <include name="AddCartProductByBrand"/>
           <include name="PlaceOrderOperation"/>
         </methods>
       </class> <!-- testcases.GuestCheckOutTest -->
+      <class name="testcases.AccountaddTest">
+        <methods>
+          <include name="close"/>
+          <include name="Startup"/>
+          <include name="PageEntryOperation"/>
+          <include name="AccountaddOperation"/>
+        </methods>
+      </class> <!-- testcases.AccountaddTest -->
+      <class name="testcases.CheckUrlTest">
+        <methods>
+          <include name="close"/>
+          <include name="Startup"/>
+          <include name="BrokenURLOperation"/>
+        </methods>
+      </class> <!-- testcases.CheckUrlTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,4 +1,4 @@
-# Created at 2023-04-08T00:16:14.702
+# Created at 2023-04-09T03:02:09.697
 Boot Manifest-JAR contains absolute paths in classpath 'D:\capstone\bestbuyframework\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

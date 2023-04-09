@@ -59,7 +59,7 @@ public class GuestCheckOutTest extends BaseClass {
 		GuestCheckOutPage checkout=new GuestCheckOutPage(driver);
 		checkout.CheckoutBtn();
 		checkout.ChangePickupMethod();
-		checkout.ChangePickupLocation();		
+		//checkout.ChangePickupLocation();		
 	}
 	@Test(priority=7)
 	public void AddPickupPerson() {

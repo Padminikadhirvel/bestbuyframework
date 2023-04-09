@@ -45,12 +45,12 @@ public class GuestAddCartPage {
 	WebElement menulink;
 	@FindBy(xpath="//button[normalize-space()='Brands']")
 	WebElement brandlink;
-	@FindBy(xpath="//a[@data-lid='ubr_shp_son']")
-	WebElement sonylink;
-	@FindBy(xpath="//a[normalize-space()='Sony cameras']")
-	WebElement sonycameralink;
-	@FindBy(xpath="//div[@id='shop-sku-list-item-97528193']//a[contains(text(),'Sony - Alpha 7 IV Full-frame Mirrorless Interchang')]")
-	WebElement sonycamera;
+	@FindBy(xpath="//a[@data-lid='ubr_shp_int']")
+	WebElement intellink;
+	@FindBy(xpath="//a[@class='link-element'][normalize-space()='Laptops']")
+	WebElement laptopslink;
+	@FindBy(xpath="//a[contains(text(),'HP - 15.6\" Touch-Screen Laptop - Intel Core i5 - 8')]")
+	WebElement laptop;
 	@FindBy(xpath="body > div:nth-child(5) > main:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(12) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > strong:nth-child(1)")
 	WebElement availablity;
 	@FindBy(xpath="//button[@data-lid='ubr_tv']")
@@ -67,8 +67,8 @@ public class GuestAddCartPage {
 		enterproduct.clear();
 		enterproduct.sendKeys(Product);
 		searchproduct.click();
-//		Assert.assertEquals(driver.getTitle(), "Best Buy | Official Online Store | Shop Now & Save");
-//		System.out.println("This is Your Home Page");
+		Assert.assertEquals(driver.getTitle(), "sony tv - Best Buy");
+		System.out.println("WELCOM TO BESTBUY Home Page");
 //		try {
 //			if(surveycontent.isDisplayed()) {
 //				surveydismiss.click();
@@ -85,12 +85,12 @@ public class GuestAddCartPage {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(sonytv));
 		sonytv.click();
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,2000)");
+		//JavascriptExecutor js=(JavascriptExecutor)driver;
+		//js.executeScript("window.scrollBy(0,2000)");
 //		action.doubleClick(samsungtv).build().perform();
-		wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(addtocart));
-		addtocart.click();
+		//wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		//wait.until(ExpectedConditions.elementToBeClickable(addtocart));
+		//addtocart.click();
 	}
 	public void GetMenu() {
 		menulink.click();
@@ -98,29 +98,22 @@ public class GuestAddCartPage {
 	public void SelectBrand() {
 		brandlink.click();
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(sonylink));
-		sonylink.click();
+		wait.until(ExpectedConditions.elementToBeClickable(intellink));
+		intellink.click();
+		Assert.assertEquals(driver.getTitle(), "Intel: Intel Powered Laptops & Desktops - Best Buy");
+		System.out.println("WELCOME TO BESTBUY Intel Brand Page");
 //		Assert.assertEquals(driver.getTitle(), "Sony Store: Sony Electronics & Entertainment - Best Buy");
 //		System.out.println("This is Your Sony Brand Page");
 		
 	}
 	public void SelectSonyproduct() {
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,300)");
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(sonycameralink));
-		sonycameralink.click();
-//		wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.elementToBeClickable(sonycamera));
-		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", sonycamera);
-//		js.executeScript("window.scrollBy(0,600)");
-		sonycamera.click();
-		//JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,1300)");
-		wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(addtocart));
-		addtocart.click();
-		
+		wait.until(ExpectedConditions.elementToBeClickable(laptopslink));
+		laptopslink.click();
+//		 wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.elementToBeClickable(laptop));
+//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", laptop);
+		laptop.click();
 	}
 	public void SelectTvDept() {
 		try {
@@ -129,16 +122,9 @@ public class GuestAddCartPage {
 			tvhomelink.click();
 			tvlink.click();
 			tvprojectorlink.click();
-//			wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-//			wait.until(ExpectedConditions.elementToBeClickable(projector));
 			projector.click();
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("window.scrollBy(0,1000)");
-			wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.elementToBeClickable(addtocart));
-			addtocart.click();
-//			Assert.assertEquals(driver.getTitle(), "BenQ TK700 4K HDR Gaming Projector, Game Modes, Low Input Lag, 3200 Lumens White TK700 - Best Buy");
-//			System.out.println("This is Your TV Department Page");
+			Assert.assertEquals(driver.getTitle(), "Samsung The Freestyle FHD HDR Smart Portable Projector White SP-LSP3BLAXZA - Best Buy");
+			System.out.println("WELCOME TO BESTBUY Projector Department Page");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -148,10 +134,10 @@ public class GuestAddCartPage {
 	public void AddtoCart() {		
 //		JavascriptExecutor js=(JavascriptExecutor)driver;
 //		js.executeScript("window.scrollBy(0,1500)");
-//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", addtocart);
-//		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.elementToBeClickable(addtocart));
-//		addtocart.click();
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", addtocart);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(addtocart));
+		addtocart.click();
 		}	
 	public void ContinueShop() {
 		continueshopping.click();

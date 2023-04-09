@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 4 failed,   12 passed</span>
+                    <span class="method-stats">18 methods, 6 failed,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.GuestCheckOutTest" class="method navigator-link" hash-for-method="AddCartProductByBrand">AddCartProductByBrand</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.AccountaddTest" class="method navigator-link" hash-for-method="AccountaddOperation">AccountaddOperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,7 +113,17 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.CheckUrlTest" class="method navigator-link" hash-for-method="BrokenURLOperation">BrokenURLOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.GuestCheckOutTest" class="method navigator-link" hash-for-method="CheckOutOperation">CheckOutOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AccountaddTest" class="method navigator-link" hash-for-method="PageEntryOperation">PageEntryOperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,7 +142,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.AccountaddTest" class="method navigator-link" hash-for-method="AccountaddOperation">AccountaddOperation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.GuestCheckOutTest" class="method navigator-link" hash-for-method="AddCartProductByBrand">AddCartProductByBrand</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -162,7 +172,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.GuestCheckOutTest" class="method navigator-link" hash-for-method="PageEntryOperation">PageEntryOperation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.CheckUrlTest" class="method navigator-link" hash-for-method="PageEntryOperation">PageEntryOperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,7 +182,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.AccountaddTest" class="method navigator-link" hash-for-method="PageEntryOperation">PageEntryOperation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.GuestCheckOutTest" class="method navigator-link" hash-for-method="PageEntryOperation">PageEntryOperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -210,62 +220,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddCartProductByBrand">
-                  </a> <!-- AddCartProductByBrand -->
-                  <span class="method-name">AddCartProductByBrand</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;shop-sku-list-item-97528193&apos;]//a[contains(text(),&apos;Sony - Alpha 7 IV Full-frame Mirrorless Interchang&apos;)]&quot;}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e26d5f2e9290bf924a9b7e1a2445b10b, findElement {using=xpath, value=//div[@id=&apos;shop-sku-list-item-97528193&apos;]//a[contains(text(),&apos;Sony - Alpha 7 IV Full-frame Mirrorless Interchang&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49308/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-	at pageObjects.GuestAddCartPage.SelectSonyproduct(GuestAddCartPage.java:115)
-	at testcases.GuestCheckOutTest.AddCartProductByBrand(GuestCheckOutTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="AddPickupPerson">
                   </a> <!-- AddPickupPerson -->
                   <span class="method-name">AddPickupPerson</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;firstName&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;firstName&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageObjects.GuestCheckOutPage.EnterPickFname(GuestCheckOutPage.java:97)
+	at testcases.GuestCheckOutTest.AddPickupPerson(GuestCheckOutTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;firstName&apos;]&quot;}
   (Session info: chrome=111.0.5563.147)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e26d5f2e9290bf924a9b7e1a2445b10b, findElement {using=xpath, value=//input[@id=&apos;firstName&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49308/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
+Command: [cf3674d9a3d93be560be5f9f9cc4d0bd, findElement {using=xpath, value=//input[@id=&apos;firstName&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51442/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf3674d9a3d93be560be5f9f9cc4d0bd
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -279,19 +251,15 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
-	at pageObjects.GuestCheckOutPage.EnterPickFname(GuestCheckOutPage.java:94)
-	at testcases.GuestCheckOutTest.AddPickupPerson(GuestCheckOutTest.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -301,30 +269,11 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
                   <a name="CheckOutOperation">
                   </a> <!-- CheckOutOperation -->
                   <span class="method-name">CheckOutOperation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (299, 15). Other element would receive the click: &lt;div class=&quot;page-spinner page-spinner--in&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=111.0.5563.147)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e26d5f2e9290bf924a9b7e1a2445b10b, clickElement {id=5383508a-ba1d-48ca-8cbf-3c0e2a1e11e1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49308/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e26d5f2e9290bf924a9b7e1a2445b10b)] -&gt; xpath: //button[@data-track=&apos;Change Store&apos;]/span]
-Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pageObjects.GuestCheckOutPage.ChangePickupLocation(GuestCheckOutPage.java:75)
-	at testcases.GuestCheckOutTest.CheckOutOperation(GuestCheckOutTest.java:62)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sign In to Best Buy] but found [Checkout – Best Buy]
+	at pageObjects.GuestCheckOutPage.ChangePickupMethod(GuestCheckOutPage.java:72)
+	at testcases.GuestCheckOutTest.CheckOutOperation(GuestCheckOutTest.java:61)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -333,15 +282,97 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
                   <a name="PlaceOrderOperation">
                   </a> <!-- PlaceOrderOperation -->
                   <span class="method-name">PlaceOrderOperation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;number&apos;]&quot;}
   (Session info: chrome=111.0.5563.147)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e26d5f2e9290bf924a9b7e1a2445b10b, sendKeysToElement {id=0b57950c-6d1b-4540-afbd-c065bce14415, value=[Ljava.lang.CharSequence;@67fa5045}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49308/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e26d5f2e9290bf924a9b7e1a2445b10b)] -&gt; xpath: //input[@id=&apos;city&apos;]]
-Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
+Command: [cf3674d9a3d93be560be5f9f9cc4d0bd, findElement {using=xpath, value=//input[@id=&apos;number&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51442/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf3674d9a3d93be560be5f9f9cc4d0bd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at pageObjects.PaymentInfoPage.EnterCardnumber(PaymentInfoPage.java:44)
+	at testcases.GuestCheckOutTest.PlaceOrderOperation(GuestCheckOutTest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.AccountaddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AccountaddOperation">
+                  </a> <!-- AccountaddOperation -->
+                  <span class="method-name">AccountaddOperation</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problems: 
+	AccountaddPage cannot be resolved to a type
+	AccountaddPage cannot be resolved to a type
+
+	at testcases.AccountaddTest.AccountaddOperation(AccountaddTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PageEntryOperation">
+                  </a> <!-- PageEntryOperation -->
+                  <span class="method-name">PageEntryOperation</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problems: 
+	AccountaddPage cannot be resolved to a type
+	AccountaddPage cannot be resolved to a type
+
+	at testcases.AccountaddTest.PageEntryOperation(AccountaddTest.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.CheckUrlTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BrokenURLOperation">
+                  </a> <!-- BrokenURLOperation -->
+                  <span class="method-name">BrokenURLOperation</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.147)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28e8d797f8d212314c0cf537b19fd4ae, getElementAttribute {id=55bffb04-da9f-46ff-9194-36e2fa959a2c, name=href}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50910}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50910/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (28e8d797f8d212314c0cf537b19fd4ae)] -&gt; tag name: a]
+Session ID: 28e8d797f8d212314c0cf537b19fd4ae
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -350,18 +381,45 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at pageObjects.PaymentInfoPage.EnterCity(PaymentInfoPage.java:65)
-	at testcases.GuestCheckOutTest.PlaceOrderOperation(GuestCheckOutTest.java:91)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+	at pageObjects.CheckUrlPage.BrokenUrl(CheckUrlPage.java:29)
+	at testcases.CheckUrlTest.BrokenURLOperation(CheckUrlTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidLoginOperation">
+                  </a> <!-- InvalidLoginOperation -->
+                  <span class="method-name">InvalidLoginOperation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginOperation">
+                  </a> <!-- LoginOperation -->
+                  <span class="method-name">LoginOperation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PageEntryOperation">
+                  </a> <!-- PageEntryOperation -->
+                  <span class="method-name">PageEntryOperation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -390,6 +448,13 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
               <span class="class-name">testcases.GuestCheckOutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCartProductByBrand">
+                  </a> <!-- AddCartProductByBrand -->
+                  <span class="method-name">AddCartProductByBrand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="AddCartProductByDept">
@@ -430,45 +495,9 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.LoginTest</span>
+              <span class="class-name">testcases.CheckUrlTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="InvalidLoginOperation">
-                  </a> <!-- InvalidLoginOperation -->
-                  <span class="method-name">InvalidLoginOperation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginOperation">
-                  </a> <!-- LoginOperation -->
-                  <span class="method-name">LoginOperation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PageEntryOperation">
-                  </a> <!-- PageEntryOperation -->
-                  <span class="method-name">PageEntryOperation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.AccountaddTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AccountaddOperation">
-                  </a> <!-- AccountaddOperation -->
-                  <span class="method-name">AccountaddOperation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="PageEntryOperation">
@@ -493,6 +522,7 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testcases.CheckUrlTest&quot;/&gt;
       &lt;class name=&quot;testcases.AccountaddTest&quot;/&gt;
       &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
       &lt;class name=&quot;testcases.LinkValidateTest&quot;/&gt;
@@ -510,7 +540,7 @@ Session ID: e26d5f2e9290bf924a9b7e1a2445b10b
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -536,76 +566,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddCartProductByBrand')
-data.setCell(0, 2, 'testcases.GuestCheckOutTest')
-data.setCell(0, 3, 55910);
+data.setCell(0, 1, 'BrokenURLOperation')
+data.setCell(0, 2, 'testcases.CheckUrlTest')
+data.setCell(0, 3, 127832);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginOperation')
-data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 49296);
+data.setCell(1, 1, 'AddPickupPerson')
+data.setCell(1, 2, 'testcases.GuestCheckOutTest')
+data.setCell(1, 3, 80096);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'InvalidLoginOperation')
-data.setCell(2, 2, 'testcases.LoginTest')
-data.setCell(2, 3, 40704);
+data.setCell(2, 1, 'PlaceOrderOperation')
+data.setCell(2, 2, 'testcases.GuestCheckOutTest')
+data.setCell(2, 3, 40442);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AddPickupPerson')
+data.setCell(3, 1, 'AddCartProductBySearch')
 data.setCell(3, 2, 'testcases.GuestCheckOutTest')
-data.setCell(3, 3, 40117);
+data.setCell(3, 3, 33677);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'AddCartProductByDept')
+data.setCell(4, 1, 'AddCartProductByBrand')
 data.setCell(4, 2, 'testcases.GuestCheckOutTest')
-data.setCell(4, 3, 28901);
+data.setCell(4, 3, 32191);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'AddCartProductBySearch')
+data.setCell(5, 1, 'AddCartProductByDept')
 data.setCell(5, 2, 'testcases.GuestCheckOutTest')
-data.setCell(5, 3, 28208);
+data.setCell(5, 3, 27549);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'CheckOutOperation')
 data.setCell(6, 2, 'testcases.GuestCheckOutTest')
-data.setCell(6, 3, 18018);
+data.setCell(6, 3, 23570);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'ShowCartOperation')
-data.setCell(7, 2, 'testcases.GuestCheckOutTest')
-data.setCell(7, 3, 16499);
+data.setCell(7, 1, 'LoginOperation')
+data.setCell(7, 2, 'testcases.LoginTest')
+data.setCell(7, 3, 20467);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'AccountaddOperation')
-data.setCell(8, 2, 'testcases.AccountaddTest')
-data.setCell(8, 3, 14722);
+data.setCell(8, 1, 'ShowCartOperation')
+data.setCell(8, 2, 'testcases.GuestCheckOutTest')
+data.setCell(8, 3, 15827);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'PageEntryOperation')
-data.setCell(9, 2, 'testcases.LoginTest')
-data.setCell(9, 3, 12779);
+data.setCell(9, 2, 'testcases.LinkValidateTest')
+data.setCell(9, 3, 13372);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'PlaceOrderOperation')
-data.setCell(10, 2, 'testcases.GuestCheckOutTest')
-data.setCell(10, 3, 10453);
+data.setCell(10, 1, 'InvalidLoginOperation')
+data.setCell(10, 2, 'testcases.LoginTest')
+data.setCell(10, 3, 11279);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'PageEntryOperation')
-data.setCell(11, 2, 'testcases.GuestCheckOutTest')
-data.setCell(11, 3, 10433);
+data.setCell(11, 2, 'testcases.LoginTest')
+data.setCell(11, 3, 9462);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'PageEntryOperation')
-data.setCell(12, 2, 'testcases.AccountaddTest')
-data.setCell(12, 3, 9032);
+data.setCell(12, 2, 'testcases.GuestCheckOutTest')
+data.setCell(12, 3, 8004);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'PageEntryOperation')
-data.setCell(13, 2, 'testcases.LinkValidateTest')
-data.setCell(13, 3, 8648);
+data.setCell(13, 2, 'testcases.CheckUrlTest')
+data.setCell(13, 3, 7970);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'PaymentInfo')
 data.setCell(14, 2, 'testcases.GuestCheckOutTest')
-data.setCell(14, 3, 1674);
+data.setCell(14, 3, 3806);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'ValidateBottomLinkofHomePage')
 data.setCell(15, 2, 'testcases.LinkValidateTest')
-data.setCell(15, 3, 854);
+data.setCell(15, 3, 772);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'AccountaddOperation')
+data.setCell(16, 2, 'testcases.AccountaddTest')
+data.setCell(16, 3, 4);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'PageEntryOperation')
+data.setCell(17, 2, 'testcases.AccountaddTest')
+data.setCell(17, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -631,119 +669,142 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.AccountaddTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.CheckUrlTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Startup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PageEntryOperation</span>
-                <span class="method-start">4085 ms</span>
+                <span class="method-start">4749 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">AccountaddOperation</span>
-                <span class="method-start">13148 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BrokenURLOperation</span>
+                <span class="method-start">12732 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">27875 ms</span>
+                <span class="method-start">140829 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AccountaddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Startup</span>
+                <span class="method-start">140835 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PageEntryOperation</span>
+                <span class="method-start">143656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AccountaddOperation</span>
+                <span class="method-start">144173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">144569 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">27877 ms</span>
+                <span class="method-start">144574 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PageEntryOperation</span>
-                <span class="method-start">32544 ms</span>
+                <span class="method-start">147429 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginOperation</span>
-                <span class="method-start">45329 ms</span>
+                <span class="method-start">156897 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">InvalidLoginOperation</span>
-                <span class="method-start">94630 ms</span>
+                <span class="method-start">177370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">135336 ms</span>
+                <span class="method-start">188653 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LinkValidateTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">135338 ms</span>
+                <span class="method-start">188661 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PageEntryOperation</span>
-                <span class="method-start">137795 ms</span>
+                <span class="method-start">192095 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ValidateBottomLinkofHomePage</span>
-                <span class="method-start">146449 ms</span>
+                <span class="method-start">205470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">147306 ms</span>
+                <span class="method-start">206245 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.GuestCheckOutTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Startup</span>
-                <span class="method-start">147307 ms</span>
+                <span class="method-start">206248 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PageEntryOperation</span>
-                <span class="method-start">151421 ms</span>
+                <span class="method-start">211333 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddCartProductBySearch</span>
-                <span class="method-start">161858 ms</span>
+                <span class="method-start">219342 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">AddCartProductByBrand</span>
-                <span class="method-start">190070 ms</span>
+                <span class="method-start">253021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddCartProductByDept</span>
-                <span class="method-start">246354 ms</span>
+                <span class="method-start">285215 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ShowCartOperation</span>
-                <span class="method-start">275258 ms</span>
+                <span class="method-start">312766 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CheckOutOperation</span>
-                <span class="method-start">291759 ms</span>
+                <span class="method-start">328597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AddPickupPerson</span>
-                <span class="method-start">310426 ms</span>
+                <span class="method-start">352332 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PaymentInfo</span>
-                <span class="method-start">350681 ms</span>
+                <span class="method-start">432654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">PlaceOrderOperation</span>
-                <span class="method-start">352357 ms</span>
+                <span class="method-start">436463 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">362957 ms</span>
+                <span class="method-start">477097 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

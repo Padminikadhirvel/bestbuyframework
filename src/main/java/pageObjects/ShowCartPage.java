@@ -38,6 +38,9 @@ public class ShowCartPage {
 	
 	public void CartLink() {
 		cartlink.click();	
+		Assert.assertEquals(driver.getTitle(), "Cart - Best Buy");
+		System.out.println("WELCOME TO BESTBUY Cart Page");
+
 //		addtotaltech.click();
 //		System.out.println(driver.getTitle());
 		try {
@@ -54,9 +57,6 @@ public class ShowCartPage {
 	public void GetPrice() {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(ordersummary));
-//		Assert.assertEquals(driver.getTitle(), "Cart - Best Buy");
-//		System.out.println("This is Your Cart Page");
-		System.out.println("CART"+""+driver.getTitle());
 		System.out.println("ORIGINAL PRICE FOR PRODUCTS : "+""+originalprice.getText());
 		System.out.println(" SAVING AMOUNT FOR PRODUCTS : "+""+savings.getText());
 		System.out.println("  PICKUP PRICE FOR PRODUCTS : "+""+storepickup.getText());

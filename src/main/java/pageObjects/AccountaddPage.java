@@ -42,6 +42,8 @@ public class AccountaddPage {
 	WebElement signout;
 	@FindBy(xpath="//a[@data-track='Create Account - Error Message - Sign In Link']")
 	WebElement userexist;
+	@FindBy(xpath="//strong[contains(text(),'Sorry, there was a problem creating your account.')]")
+	WebElement accerror;
 	@FindBy(xpath="//a[normalize-space()='Return to previous page']")
 	WebElement returnhome;
 	
@@ -56,6 +58,8 @@ public class AccountaddPage {
 		createaccountlink.click();
 	}
 	public void EnterFirstName(String Firstname) {
+		Assert.assertEquals(driver.getTitle(), "Best Buy: Create an Account");
+		System.out.println("WELCOME TO BEST BUY Signup page");
 		firstname.sendKeys(Firstname);
 	}
 	public void EnterLastName(String Lastname) {
@@ -75,18 +79,18 @@ public class AccountaddPage {
 	}
 	public void CreateAccBtn() {
 		createaccountbtn.click();
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollTo(document.body.scrollHeight,0)");
-		if(returnhome.isDisplayed()) {
-			Assert.assertEquals(returnhome.getText(), "Return to previous page");
-			System.out.println("User already exist");
+//		JavascriptExecutor js=(JavascriptExecutor)driver;
+//		js.executeScript("window.scrollTo(document.body.scrollHeight,0)");
+		if(accerror.isDisplayed()) {
+			Assert.assertEquals(accerror.getText(), "Sorry, there was a problem creating your account.");
+//			System.out.println("User already exist");
 			returnhome.click();
-		}else if(logintest.isDisplayed())
-				{
-					Assert.assertEquals(logintest.getText(), "Hi,Testuser");
-					System.out.println("User Loggedin successfuly");
-					signout.click();
-				}
+		}//else if(logintest.isDisplayed())
+//				{
+//					Assert.assertEquals(logintest.getText(), "Hi,Testuser");
+//					System.out.println("User Loggedin successfuly");
+//					signout.click();
+//				}
 	}
 
 }

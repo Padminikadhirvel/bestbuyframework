@@ -34,7 +34,7 @@ public class GuestCheckOutPage {
 	WebElement instore;
 	@FindBy(xpath="//button[@data-test='curbside']")
 	WebElement curbside;
-	@FindBy(xpath="//span[contains(.,'Add a new pickup person')]")
+	@FindBy(xpath="//span[contains(text(),'Add a new pickup person')]")
 	WebElement Addpickupperson;
 	@FindBy(xpath="//input[@id='firstName']")
 	WebElement pickpersonfname;
@@ -54,6 +54,11 @@ public class GuestCheckOutPage {
 	WebElement mobileno;
 	@FindBy(xpath="//button[@class='btn btn-lg btn-block btn-secondary']")
 	WebElement continuepayment;
+	@FindBy(xpath="//div/span[contains(text(),'Sorry, there was a problem. Please try that again.')]")
+	WebElement continuepaymentwrong;
+	@FindBy(xpath="//a[@href='/cart']")
+	WebElement returncart;
+	
 	
 	public void CheckoutBtn() {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -63,10 +68,13 @@ public class GuestCheckOutPage {
 	}
 	
 	public void ChangePickupMethod() {
-		System.out.println(driver.getTitle());
+		driver.navigate().refresh();
+		Assert.assertEquals(driver.getTitle(), "Sign In to Best Buy");
+		System.out.println("WELCOME TO BESTBUY Checkout Page");
+
 //		JavascriptExecutor js=(JavascriptExecutor)driver;
 //		js.executeScript("window.scrollBy(0,300)");
-		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", curbside);
+//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", curbside);
 		curbside.click();
 	}
 	public void ChangePickupLocation() {
@@ -79,18 +87,14 @@ public class GuestCheckOutPage {
 		selectlocation.click();
 	}
 	public void AddPickPerson() {
-		try {
 			((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Addpickupperson);
 			Addpickupperson.click();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			}
 		
-//		js.executeScript("window.scrollTo(document.body.scrollHeight,0)");
-		
-	}
+
 	public void EnterPickFname(String Pfname) {
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(pickpersonfname));
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", pickpersonfname);
 		pickpersonfname.sendKeys(Pfname);
 	}
@@ -98,8 +102,9 @@ public class GuestCheckOutPage {
 		pickpersonlname.sendKeys(Plname);
 	}
 	public void EnterPickMobno(String Pmobno) {
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(300,800)");
+//		JavascriptExecutor js=(JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(300,800)");
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Addpickupperson);
 		pickpersonmobno.sendKeys(Pmobno);
 	}	
 	public void EnterPickEmail(String Pemail) {
@@ -121,7 +126,15 @@ public class GuestCheckOutPage {
 		mobileno.sendKeys(Mobileno);
 	}
 	public void ContinuePayment() {
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(continuepayment));
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", continuepayment);
 		continuepayment.click();
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", continuepaymentwrong);
+		if(continuepaymentwrong.isDisplayed()) {
+			Assert.assertEquals(continuepaymentwrong.getText(), "Sorry, there was a problem. Please try that again.");
+			System.out.println("There was a problem in signin. Can't continue payment.");
+		}
+		
 	}
 }

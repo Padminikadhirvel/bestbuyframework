@@ -32,11 +32,23 @@ public class LoginPage {
 	WebElement homepage;
 	@FindBy(xpath="//span[@class='v-p-right-xxs line-clamp']")
 	WebElement logintest;
+	@FindBy(xpath="//strong/div[contains(text(),'Sorry, something went wrong. Please try again.')]")
+	WebElement loginwrong;
+	@FindBy(xpath="//a[@href='https://www.bestbuy.com/?intl=nosplash']")
+	WebElement returnhome;
+	@FindBy(xpath="//span[@class='v-p-right-xxs line-clamp']")
+	WebElement accountbutton;
+	
 	
 	public void Siginlink() {
 		signinlink.click();
 	}
+	public void Acclink() {
+		accountbutton.click();
+	}
 	public void EnterEmailAddr(String Emailid) {
+		Assert.assertEquals(driver.getTitle(), "Sign In to Best Buy");
+		System.out.println("WELCOME TO BEST BUY Signin page");
 		emailaddr.click();
 		emailaddr.sendKeys(Emailid);
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
@@ -61,23 +73,23 @@ public class LoginPage {
 	public void SigninBtn() {
 		signinbtn.click();
 
-		try {
-			if(noacclink.isDisplayed()) {
-				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(40));
-				wait.until(ExpectedConditions.visibilityOf(noacclink));	
-				Assert.assertEquals(noacclink.getText(), "create an account");
-				noacclink.click();
-				System.out.println("Account not Exist");
-			}else if(homepage.isDisplayed()) {
-				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(40));
-				wait.until(ExpectedConditions.visibilityOf(homepage));								
-				homepage.click();
-				Assert.assertEquals(logintest.getText(), "Hi,Testuser");
-				System.out.println("User Loggedin successfuly");
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//			if(noacclink.isDisplayed()) {
+//				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(40));
+//				wait.until(ExpectedConditions.visibilityOf(noacclink));	
+//				Assert.assertEquals(noacclink.getText(), "create an account");
+//				noacclink.click();
+//				System.out.println("Account not Exist");
+//			}else if(homepage.isDisplayed()) {
+//				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(40));
+//				wait.until(ExpectedConditions.visibilityOf(homepage));								
+//				homepage.click();
+//				Assert.assertEquals(logintest.getText(), "Hi,Testuser");
+//				System.out.println("User Loggedin successfuly");
+//			}else if(loginwrong.isDisplayed()) {
+				Assert.assertEquals(loginwrong.getText(), "Sorry, something went wrong. Please try again.");
+				System.out.println("Sorry, something went wrong in signin page");
+				returnhome.click();
+//			}
+		
 	}
 }

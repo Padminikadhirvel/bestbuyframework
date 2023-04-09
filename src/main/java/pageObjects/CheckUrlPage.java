@@ -39,17 +39,17 @@ public class CheckUrlPage {
 	            // connection began
 	            c.connect();
 	            //getResponseCode() to obtain response code
-	            if(c.getResponseCode()== 200) {
-	               System.out.println(u+" − "+ c.getResponseMessage()+": Valid URL");
-	            }
-	            if(c.getResponseCode()== 404) {
+	            
+	            if(c.getResponseCode()>= 404) {
 	               System.out.println(u+" − "+c.getResponseMessage()+": Broken URL");
-	            }
+	            }else if(c.getResponseCode()== 200) {
+	 	               System.out.println(u+" − "+ c.getResponseMessage()+": Valid URL");
+	 	            }
 	         }
 	         catch (StaleElementReferenceException e) {
 	        	 WebElement ele1 = l.get(i);
 	        	 String u1 = ele1.getAttribute("href");
-	        	 System.out.println("The string entered from catch block is - " +u);
+	        	 System.out.println("The string entered from catch block is - " +u1);
 	         }
 	      }
 	}

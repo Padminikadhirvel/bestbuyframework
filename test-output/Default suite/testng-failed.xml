@@ -8,8 +8,6 @@
           <include name="close"/>
           <include name="Startup"/>
           <include name="AddPickupPerson"/>
-          <include name="CheckOutOperation"/>
-          <include name="AddCartProductByBrand"/>
           <include name="PlaceOrderOperation"/>
         </methods>
       </class> <!-- testcases.GuestCheckOutTest -->

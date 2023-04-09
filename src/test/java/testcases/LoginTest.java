@@ -16,19 +16,20 @@ public class LoginTest extends BaseClass{
 		addacc.AccountLink();		
 	}
 	@Test(priority=2)
-	public void LoginOperation() {
+	public void LoginOperation(){
 		LoginPage login=new LoginPage(driver);
 		login.Siginlink();
 		login.EnterEmailAddr(prop.getProperty("Emailid"));
 		login.EnterPassword(prop.getProperty("Password"));
 		login.SigninBtn();
-		
+				
 	}
 	@Test(priority=3)
 	public void InvalidLoginOperation() {
 		LoginPage login=new LoginPage(driver);
-//		login.Siginlink();
-//		login.EnterEmailAddr(prop.getProperty("Emailid"));
+		login.Acclink();
+		login.Siginlink();
+		login.EnterEmailAddr(prop.getProperty("Emailid"));
 		login.EnterPassword(prop.getProperty("InvalidPwd"));
 		login.SigninBtn();
 		

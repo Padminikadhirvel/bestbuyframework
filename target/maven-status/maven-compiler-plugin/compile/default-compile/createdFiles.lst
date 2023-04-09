@@ -1,0 +1,8 @@
+pageObjects\CheckUrlPage.class
+pageObjects\GuestCheckOutPage.class
+pageObjects\ShowCartPage.class
+pageObjects\GuestAddCartPage.class
+pageObjects\PaymentInfoPage.class
+pageObjects\LinkValidatePage.class
+pageObjects\LoginPage.class
+pageObjects\AccountaddPage.class
